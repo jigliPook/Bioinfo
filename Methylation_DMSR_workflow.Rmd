@@ -1,0 +1,265 @@
+---
+title: "Methylation_workflow"
+author: "Yulia"
+date: "2024-05-09"
+output:
+  html_document:
+    df_print: paged
+    
+    theme: spacelab
+    highlight: pygments
+
+---
+# This is a demo version..........
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### overview
+This is an example of a RRBS Methylation analysis workflow
+
+
+# {.tabset}
+## Introduction to RRBS {.tabset .tabset-pills}
+
+Genomic DNA is first digested by MSP1 which cuts at CCGG sites. These fragments are end-repaired, A-tailed, and adapter-attached and then bisulfite treated. The unmethylated C is converted to U (T) and methylated C is unchanged. The blue bases are from media and are not real biological signal that needed to be removed
+
+![RRBS concept and workflow](/Users/yuliaryv/Documents/Group meetings_NGS/NGS_ppts/RRBS_concept_and_workflow.png)
+
+```
+Baheti, Saurabh & Kanwar, Rahul & Gölzenleuchter, Meike & Kocher, Jean-Pierre & Beutler, Andreas & Sun, Zhifu. (2016). Targeted alignment and end repair elimination increase alignment and methylation measure accuracy for reduced representation bisulfite sequencing data. BMC genomics. 17. 149. 10.1186/s12864-016-2494-8. 
+```
+
+
+## Trimming: Trim Galore {.tabset .tabset-pills}
+### Introduction {.tabset .tabset-pills}
+'''
+
+
+'''
+
+### Code {.tabset .tabset-pills}
+
+```{bash}
+
+```
+
+```{bash}
+
+```
+
+```{bash}
+
+```
+
+```{bash}
+
+```
+
+```{bash}
+
+```
+
+```{bash}
+
+```
+
+
+## Bismark (mapping and cov.) {.tabset .tabset-pills}
+### Introduction {.tabset .tabset-pills}
+'''
+
+
+'''
+
+### Code {.tabset .tabset-pills}
+
+```{bash}
+
+```
+
+```{bash}
+
+```
+
+```{bash}
+
+```
+
+```{bash}
+
+```
+
+```{bash}
+
+```
+
+```{bash}
+
+```
+
+```{bash}
+
+```
+
+
+## DMS {.tabset .tabset-pills}
+### MethylKit {.tabset .tabset-pills}
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+
+### SeqMonk {.tabset .tabset-pills}
+
+'''
+
+'''
+
+## DMR {.tabset .tabset-pills}
+### MethylKit {.tabset .tabset-pills}
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+
+### SeqMonk {.tabset .tabset-pills}
+
+'''
+
+
+'''
+
+## wgbstools {.tabset .tabset-pills}
+
+```{bash}
+
+```
+
+```{bash}
+
+```
+
+```{bash}
+
+```
+
+```{bash}
+
+```
+
+```{bash}
+
+```
+
+```{bash}
+
+```
+
+```{bash}
+
+```
+
+## GREAT {.tabset .tabset-pills }
+
+'''
+
+'''
+
+*** 
+
+notice the line above this text. It was created by typing *** in the space between the chunks
+
+***
+***
+
+two lines
+
+
+
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
+
+- This is my first conclusion
+- This is my second conclusion
+
+</div>
+
+
+***
+Code to get this result
+
+[Highlight text](https://holtzy.github.io/Pimp-my-rmd/#highlight_a_piece_of_text)
+
+```{r}
+# <style>
+# div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+# </style>
+# <div class = "blue">
+# 
+# - This is my first conclusion
+# - This is my second conclusion
+# 
+# </div>
+```
+
